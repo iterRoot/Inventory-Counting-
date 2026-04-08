@@ -240,8 +240,8 @@ namespace Inventory_Counting
         {
             var combo = (SAPbouiCOM.ComboBox)this.UIAPIRawForm.Items.Item("Item_3").Specific;
 
-            combo.ValidValues.Add("S", "Single Counter");
-            combo.ValidValues.Add("M", "Multiple Counters");
+            combo.ValidValues.Add("Single Counter","S");
+            combo.ValidValues.Add("Multiple Counters","M");
 
             combo.Select("S", SAPbouiCOM.BoSearchKey.psk_ByValue);
         }
